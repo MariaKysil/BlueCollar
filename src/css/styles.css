@@ -37,6 +37,16 @@ h1, h2, h3, h4, p {
     padding: 0;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+li {
+    margin: 0;
+}
+
  /* header styles */
 .header-wrapper {
     background-color: var(--gray-backround);
@@ -142,6 +152,10 @@ margin-left: auto;
 
 /* navigation */
 .nav {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%);
     display: flex;
     align-items: center;
 
@@ -189,6 +203,7 @@ margin-left: auto;
 .hero {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
     padding-top: 270px;
     padding-bottom: 230px;
     padding-left: 120px;
@@ -249,4 +264,180 @@ margin-left: auto;
 
 
     cursor: pointer;
+}
+
+.nav-position {
+    position: relative;
+}
+
+/* section what we provise */
+.provide-section {
+    padding: 140px 25px;
+
+    display: flex;
+    align-items: center;
+}
+
+.provide-item {
+    min-width: 535px;
+}
+
+.provide-item:not(:last-child) {
+    margin-right: 25px;
+}
+
+.provide-text {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 22px;
+
+    display: inline-flex;
+
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.36px;
+
+    color: var(--dark-blue);
+    background-color: var(--gray-text);
+}
+
+.provide-icon {
+    margin-right: 10px;
+}
+
+.provide-title {
+    margin-bottom: 12px;
+
+    font-family: "Mulish";
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 1.3;
+    letter-spacing: 0.36px;
+
+    color: var(--dark-blue);
+}
+
+.provide-info {
+    margin-bottom: 10px;
+
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.36px;
+}
+
+.provide-years {
+    display: flex;
+    align-items: center;
+}
+
+.box {
+    width: 198px;
+    height: 200px;
+
+    margin-right: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--gray-text);
+}
+
+.provide-number {
+    margin-bottom: 16px;
+
+    font-size: 80px;
+    line-height: 1.1;
+    font-weight: normal;
+    letter-spacing: 0.36px;
+
+    color: var(--yellow-accent);
+}
+
+.provide-experience {
+    font-family: 'Mulish';
+    font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: 0.36px;
+    text-align: center;
+
+    color: var(--dark-blue);
+}
+
+.item-experience {
+    font-size: 17px;
+    line-height: 1.6;
+    letter-spacing: 0.36px;
+}
+
+.item-experience:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.item-experience::before {
+    content: '-';
+    margin-right: 10px;
+}
+
+/* what we offer */
+.what-we-offer {
+    padding-top: 140px;
+    padding-left: 304px;
+    padding-right: 304px;
+    min-height: 900px;
+    text-align: center;
+    background-color: var(--yellow-accent);
+}
+
+.offer-text {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 22px;
+
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--white);
+    color: var(--dark-blue);
+
+    
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.36px;
+    text-transform: capitalize;
+}
+
+.offer-icon {
+    margin-right: 10px;
+}
+
+.offer-title {
+    margin-bottom: 12px;
+
+    font-family: 'Mulish';
+    font-weight: normal;
+    font-size: 45px;
+    line-height: 1.3;
+    letter-spacing: 0.36px;
+
+    color: var(--dark-blue);
+}
+
+.what-we-offer-text {
+    margin-bottom: 37px;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.36px;
+    color: var(--dark-blue);
+}
+
+.offer-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer-item {
+    display: flex;
+    align-items: center;
 }
