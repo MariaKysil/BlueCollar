@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BlueCollar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Mulish&display=swap" rel="stylesheet">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -51,15 +54,67 @@
    </div>
 </div>
 
-<div class="container">
+<!-- header second part -->
+<div class="container logo-position">
+
     <a href="" class="link logo">
-        <svg width="44" height="22">
+        <svg width="44" height="44" class="icon-position">
             <use xlink:href="./src/images/symbol-defs.svg#icon-builder"></use>
-        </svg> BlueCo<span class="text-accent">ll</span>ar
+        </svg>BlueCo<span class="text-accent">ll</span>ar
     </a>
+  
+
+    <ul class="list contact-logo">
+        <li class="logo-item"> 
+         <div class="contact-icon">
+            <svg width="28" height="22">
+                <use xlink:href="./src/images/symbol-defs.svg#icon-envelope"></use>
+            </svg>
+         </div>
+       <div>
+        <p class="contact-text">Mail Us</p>
+        <a href="mailto:Info@bluecollar.com" class="link contact-link">Info@bluecollar.com</a>
+       </div>
+    </li>
+        <li class="logo-item"> 
+      <div class="contact-icon"> 
+        <svg width="24" height="24">
+        <use xlink:href="./src/images/symbol-defs.svg#icon-phone"></use>
+    </svg>
 </div>
+       <div> 
+        <p class="contact-text">Call Us</p>
+        <a href="tel:+01569896654" class="link contact-link">+01 569 896 654</a>
+    </div>
+    </li>
+    </ul>
+</div>
+
+<nav class="container nav">
+    <ul class="list nav-list">
+        <li class="nav-item"><a href="" class="link nav-link">Home</a></li>
+        <li class="nav-item"><a href="" class="link nav-link">About Us</a></li>
+        <li class="nav-item"><a href="" class="link nav-link">Pages</a></li>
+        <li class="nav-item"><a href="" class="link nav-link">Blog</a></li>
+        <li class="nav-item"><a href="" class="link nav-link">Contact Us</a></li>
+    </ul>
+    <button type="button" class="nav-button"> Have Any Questions? </button>
+</nav>
 </header>
-<main></main>
+
+<main>
+    <section class="hero">
+    <p class="hero-text">
+        <svg width="30" height="29" class="hero-icon">
+            <use xlink:href="./src/images/symbol-defs.svg#icon-screw"></use>
+        </svg>
+        Improve our customers’ lives by providing effective solutions.
+    </p>
+    <h1 class="hero-title">A recognized leader in services industry</h1>
+    <button type="button" class="hero-button">View Services</button>
+</section>
+</main>
+
 <footer></footer>
 </body>
 </html>
