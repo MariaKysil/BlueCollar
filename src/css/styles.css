@@ -643,13 +643,10 @@ transform: translate(-50%);
 
 .choose-list {
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
 .choose-item {
-    padding-top: 16px;
-    padding-bottom: 16px;
     border: solid 1px var(--white);
 }
 
@@ -658,22 +655,126 @@ transform: translate(-50%);
 }
 
 .item-number {
+    display: inline-flex;
     padding-left: 21px;
     padding-right: 28px;
     padding-top: 16px;
     padding-bottom: 16px;
     border: var(--yellow-accent);
 
-    width: 150px;
+    width: 110px;
 
+    color: var(--dark-blue);
     background-color: var(--yellow-accent);
+
+    font-family: "Mulish";
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.36px;
+    
+}
+
+.item-text {
+    display: inline-flex;
+    padding-left: 20px;
+
+    font-family: 'Mulish';
+    font-size: 25px;
+    line-height: 1.4;
+    letter-spacing: 0.36px;
+    color: var(--white);
+
 }
 
 .choose-info {
     padding-top: 93px;
-    padding-bottom: 108px;
+    padding-bottom: 80px;
     padding-left: 70px;
     padding-right: 73px;
 
     max-width: 720px;
+}
+
+.reason-list {
+    margin-top: 37px;
+}
+
+.reason-item {
+    display: flex;
+    align-items: flex-start;
+}
+
+.reason-item:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.reason-title {
+    margin-bottom: 8px;
+
+    font-family: 'Mulish';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 0.36px;
+    
+    color: var(--dark-blue);
+}
+
+.choose-wrap {
+    margin-left: 20px;
+}
+
+/* gallery */
+.gallery {
+    text-align: center;
+    padding-top: 150px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 160px;
+
+    background-color: var(--dark-blue);
+}
+
+.gallery-title {
+    margin-bottom: 50px;
+
+    font-family: 'Mulish';
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 1.3;
+    letter-spacing: 0.36px;
+  
+    color: var(--white);
+}
+
+.gallery-list {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery-item {
+    background-color: var(--white);
+    padding: 21px 21px;
+}
+
+.gallery-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.gallery-subtitle {
+    margin-top: 27px;
+    margin-bottom: 4px;
+
+    font-family: 'Mulish';
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 1.5;
+    letter-spacing: 0.36px;
+    text-transform: capitalize;
+
+    color: var(--dark-blue);
+}
+
+.gallery-overlay {
+    
 }
